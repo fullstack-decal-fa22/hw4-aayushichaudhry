@@ -3,26 +3,25 @@ import Color from "./Color";
 import Feed from "./Feed";
 /* Add any imports you think you might need here! */
 
-const Menu = () => {
-  const [state, updateFeed] = useState([]);
+const Menu = (props) => {
 
   return (
     <div className="colorOptions">
       <Color
         color="red"
-        handleClick={(color) => updateFeed({ state: [color, ...state] })}
+        handleClick={(color) => props.handleClick(color)}
       ></Color>
       <Color
         color="pink"
-        handleClick={(color) => updateFeed({ state: [color, ...state] })}
+        handleClick={(color) => props.handleClick(color)}
       ></Color>
       <Color
         color="blue"
-        handleClick={(color) => updateFeed({ state: [color, ...state] })}
+        handleClick={(color) => props.handleClick(color)}
       ></Color>
       <Color
         color="green"
-        handleClick={(color) => updateFeed({ state: [color, ...state] })}
+        handleClick={(color) => props.handleClick(color)}
       ></Color>
     </div>
   );

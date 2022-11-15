@@ -4,7 +4,7 @@ import React from "react";
 const Block = (props) => {
   /* TODO */
   const backgroundColor = {
-    backgroundColor: props.color,
+    backgroundColor: props.color
   };
 
   return (
@@ -14,9 +14,7 @@ const Block = (props) => {
             we took care of the basic block styling! 
             If curious, check out the css in Styles/Block.css */}
       {/* Refer to hint if stuck on how to color the posts */}
-      <div className="post">
-        <div style={backgroundColor}></div>
-      </div>
+      <div className="post" style={backgroundColor}></div>
       <div className="caption">
         <p>{props.color}</p>
       </div>
